@@ -20,6 +20,7 @@ export default class Chat extends Component {
   }
 
   componentDidMount() {
+    // 接受服务器发送消息
     this.socket.on('hello').subscribe((e) => {
       this.setState({
         msg: e
@@ -27,7 +28,7 @@ export default class Chat extends Component {
     })
   }
 
-  // 想服务端发送消息
+  // 向服务端发送消息
   sendMsg() {
     this.socket.emit('from', 'react').subscribe((e) => {console.log(e)})
   }
