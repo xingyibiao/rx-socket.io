@@ -1,0 +1,16 @@
+{
+  "name": "rx-socketio",
+  "version": "1.0.0",
+  "description": "利用rxjs将socket.io-client改造成可观察对象返回",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rxjs",
+    "socket.io",
+    "socket"
+  ],
+  "author": "xingyibiao",
+  "license": "MIT"
+}
