@@ -12,7 +12,7 @@ export default class Chat extends Component {
   constructor() {
     super()
     // this.socket = io('http://localhost:3000')
-    this.socket = new RxSocket({url: 'http://localhost:3000'})
+    this.socket = new RxSocket('http://localhost:3000')
 
     this.state = {
       msg: ''
@@ -42,3 +42,5 @@ export default class Chat extends Component {
   }
 }
 ```
+
+构造函数和官方api相同，接受两个参数，第一个是url, 第二个是options
